@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: black;
+  --secondary-color: #FFD700;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  
+ 
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/* NAVBAR */
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  color: var(--primary-color);
+}
+
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+nav ul li {
+  font-weight: var(--bold-font);
+}
+
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none; /* Hidden by default, will be displayed on smaller screens */
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide by default on small screens */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 100%; /* Display it right under the nav bar */
+    left: 0;
+    width: 100%; /* Take full width */
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    gap: 0.5rem;
+  }
+
+  nav ul li {
+    text-align: center; /* Center-align the links */
+    padding: 1rem 0; /* Add some vertical padding for spacing */
+  }
+
+  .burger-menu {
+    display: block; /* Display burger menu on small screens */
+  }
+}
+
+
+/* HERO */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+  padding: 2rem; /* Adding some padding for better appearance on smaller screens */
+}
+
+.hero img {
+  max-height: 37.5rem; /* Changed height to max-height */
+  max-width: 37.5rem; /* Changed width to max-width */
+  width: 100%; /* Added this to ensure it resizes based on container */
+  border-radius: 11px;
+}
+
+.bio {
+  max-width: 25rem; /* Changed width to max-width to allow it to grow on smaller screens */
+  width: 100%; /* This ensures it takes full width when required */
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stack image and bio vertically */
+  }
+
+  .hero img {
+    max-height: 25rem; /* Reduce size for smaller screens */
+    max-width: 25rem; /* Reduce size for smaller screens */
+  }
+
+  .bio {
+    max-width: 100%; /* Allow bio to take full width */
+    margin-top: 2rem; /* Add some margin for better spacing */
+  }
+}
+
+/* 
+MORE ABOUT */
+
+.more-about {
+  background-color: var(--bg-color);
+  padding: 1rem 6rem;
+}
+
+.more-about h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.more-about p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+}
+
+/* SKILLS */
+
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+/* PROJECTS */
+
+.projects {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.project-pic {
+  width: 65%;
+  height: auto; /* Maintain aspect ratio of the image */
+  display: block; /* Remove any potential space at the bottom of the image */
+  margin: 0 auto; /* Center the image */
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center items on all screen sizes */
+}
+
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+  margin: 0.5rem; /* Add some space between cards when they wrap */
+}
+
+/* Responsiveness for tablets and smaller screens */
+@media (max-width: 768px) {
+  .project-pic {
+    width: 75%;
+  }
+
+  .project-container {
+    width: 60%; /* Make cards a bit wider on tablet screens */
+  }
+}
+
+/* Responsiveness for mobile screens */
+@media (max-width: 480px) {
+  .project-pic {
+    width: 85%;
+  }
+
+  .project-container {
+    width: 90%; /* Almost full width for mobile */
+  }
+}
+
+.project-details {
+  margin-bottom: 1rem; /* Add space below the project details */
+  
+}
+.project-link{
+  text-decoration: underline;
+}
+
+
+/* CONTACT ME */
+
+.contact {
+  margin-top: 2rem;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: var(--bottom-margin-2);
+}
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+
+.contact-form-container label {
+  line-height: 2.7em;
+  font-weight: var(--bold-font);
+  color: var(--primary-color);
+}
+
+.contact-form-container textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset var(--primary-color);
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.input-field::placeholder {
+  padding: 0.5rem;
+  color: var(--primary-color);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+  color: white;
+}
+
+/* SOCIAL */
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}

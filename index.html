@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Alen Kiyanovski | Web Developer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <nav>
+      <h1>ALEN KIYANOVSKI</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="about">
+  <img
+      src="assets/images/profileshort.jpeg"
+      alt="portrait of Alen Kiyanovski"
+      loading="lazy"
+      class="hero-img"
+  />
+  <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">Introduction</h2>
+      <p class="bio-text">
+          Greetings! I'm Alen, a Full Stack JavaScript Developer with a specialization in the MERN stack. Hailing from a background in Finance at Georgia State University, I seamlessly blend technical expertise with keen business insights. My passion lies in creating user-focused solutions that not only look good but also enhance business performance. Ready to collaborate and create something extraordinary?
+      </p>
+  </div>
+</section>
+
+<!-- Detailed Information -->
+<section class="more-about">
+  <h2>Digging Deeper</h2>
+  <p>
+      My journey in web development began from a unique intersection of finance and technology. This unique blend has equipped me with an analytical approach, ensuring every project I undertake has a robust foundation.
+  </p>
+  <p>
+      Beyond the screen, I cherish the lessons learned from diverse experiences — from managing logistics in Europe's luxury car sector to teaching Hebrew. Each chapter has further refined my problem-solving abilities and communication skills.
+  </p>
+  <p>
+     Eager to exchange insights or embark on a new project? Let's connect.
+  </p>
+</section>
+
+
+    <!-- Skills section -->
+
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-html-5.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-css3.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-javascript.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-angular.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-react-native.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-mongodb.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/pokedex.png"
+            alt="POKEDEX"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">POKEDEX</h3>
+          <p class="project-details">
+            build a small web application with HTML, CSS, and JavaScript that loads  data from an external API and enables the viewing of data points in detail.
+          </p>
+          <a href="https://github.com/Alen245/simple-js-app" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/reactmovies.png"
+            alt="My Movie Flix"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">My Movie Flix</h3>
+          <p class="project-details">
+            Developed the server-side component of a "movies" web application utilizing Node.js, Express, and MongoDB. The web application offers users comprehensive insights into various movies, directors, and genres. Then, using React, built the client-side for an app called myFlix based on its existing server-side code (REST API and database).
+          </p>
+          <a href="https://github.com/Alen245/myFlix-client" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/meetapp.png"
+            alt="MeetApp"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">My MeetApp</h3>
+          <p class="project-details">
+            A serverless, progressive web application (PWA) using React and employed a test-driven development (TDD) technique. The application utilizes the Google Calendar API to fetch upcoming events.
+          </p>
+          <a href="https://github.com/Alen245/meet/tree/main" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/ChatApp.png"
+            alt="ChatApp"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">My ChatApp</h3>
+          <p class="project-details">
+            Designed a React Native chat app for Android and iOS using Expo and Google Firestore. The app features real-time messaging, image sharing, location disclosure, and accessibility support.
+          </p>
+          <a href="https://github.com/Alen245/ChatApp" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section -->
+
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mdorgpqd" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+
+    <div class="socials">
+   
+  
+      <a href="https://www.linkedin.com/in/alen-kiyanovski-669065138/" target="_blank">
+          <img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" />
+      </a>
+      <a href="https://github.com/Alen245" target="_blank">
+          <img src="assets/icons/icons8-github.gif" alt="Github" class="socicon" />
+      </a>
+  </div>
+  
+
+    <!-- Footer section -->
+
+    <footer>
+      <p class="copy">&copy; Copyright 2023</p>
+      <p class="copy">
+      
+        
+      </p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
