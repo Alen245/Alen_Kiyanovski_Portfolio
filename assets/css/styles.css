@@ -146,6 +146,7 @@ nav ul li {
   padding: 0.625rem;
   border-radius: 6px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  font-size: large;
 }
 
 .bio h1 {
@@ -180,6 +181,8 @@ MORE ABOUT */
 .more-about {
   background-color: var(--bg-color);
   padding: 1rem 6rem;
+  text-align: center;
+  font-size: large;
 }
 
 .more-about h2 {
