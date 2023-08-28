@@ -134,8 +134,8 @@ nav ul li {
 }
 
 .hero img {
-  max-height: 37.5rem; /* Changed height to max-height */
-  max-width: 37.5rem; /* Changed width to max-width */
+  max-height: auto; /* Changed height to max-height */
+  max-width: auto; /* Changed width to max-width */
   width: 100%; /* Added this to ensure it resizes based on container */
   border-radius: 11px;
 }
